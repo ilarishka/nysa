@@ -22,13 +22,14 @@ body {
  width:800px;
  margin:20px auto;
  }
-h1 { font: 30pt Arial, sans-serif; padding: 10px 0 5px 0; width: 600px; margin: 0 auto 10px auto; border-bottom: 1px solid #8f8f8f; text-align: center; }
-h2 { font: 20pt Arial, sans-serif; padding: 10px 0 5px 0; width: 600px; margin: 0 auto 10px auto; text-align: center; }
-h3 { font: 12pt Arial, sans-serif; font-weight: bold; padding: 10px 0 5px 0; width: auto; margin: 0 auto 10px auto; text-align: left; }
+h1 { font: 30pt Arial, sans-serif; padding: 5px 0 5px 20px; width: 800px; margin: 0 auto 30px auto; border-bottom: 1px solid #8f8f8f; text-align: center; }
+h2 { font: 10pt Arial, sans-serif; font padding: 10px 0 5px 0; width: 700px; margin: 0 auto 10px auto; text-align: left; }
+
+h3 { font: 12pt Arial, sans-serif;font-weight: bold; padding: 10px 0 5px 0; width: auto; margin: 0 auto 10px auto; text-align: left; }
 p { font: 10pt Arial, sans-serif; width: 600px; margin: 10px auto; padding-top: 7px; text-align: left; line-height: 140%; }
 
 div.text {
-	margin:60px auto;
+	margin:45px auto;
 /*	float: left;
 	 margin-left: -170px;
 	 margin-top: 10px;*/
@@ -180,14 +181,45 @@ div.cap33 { position: absolute; top: 29px; left: 71px; width: 15px; font: 8pt Ar
 div.cap34 { position: absolute; top: 29px; left: 112px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
 div.cap35 { position: absolute; top: 29px; left: 152px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
 div.cap36 { position: absolute; top: 29px; left: 191px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+
+.g-age-key {
+	text-align: left;
+	width: 78%;
+	padding-top: 45px;
+	font-size: 0;
+  	color: #000000;
+  	font: 9pt Arial, sans-serif;
+  	margin-left: 85px;
+}
+.g-age-key-item {
+  font-family: 'nyt-franklin', Arial, sans-serif;
+  font-weight: 200;
+  margin-right: 100px;
+  display: inline-block;
+  padding: 10px;
+}
+.age-key-box {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  display: inline-block;
+  margin-right: 6px;
+}
+.black-age-key-box {
+  background-color: #E0CCDA;
+}
+.white-age-key-box {
+  background-color: #6E3357;
+}
 </style>
 
 </head>
 
 <body>
 
-<h1>The best represented race in the New York State Assembly?</h1>
-<h2> It will surprise you</h2>
+<h1>The best represented race in the New York State Assembly will surprise you</h1>
+<h2 class="byline-dateline"><span class="byline " itemprop="author creator" itemscope="" itemtype="http://schema.org/Person" style="font-weight:bold; font-size: 9pt">By <span class="byline-author" data-byline-name="ILARIA PAROGNI" itemprop="name" data-twitter-handle="ilaria_parogni" style="font-weight: bold">ILARIA PAROGNI</span>, </span><span class="byline " itemprop="author creator" itemscope="" itemtype="http://schema.org/Person" itemid="http://topics.nytimes.com/top/reference/timestopics/people/l/david_leonhardt/index.html"><time class="dateline" datetime="2015-04-29" style="font-size: 9pt">APRIL 29, 2015</time>
+</h2>
 
 
 <div id="container">
@@ -239,6 +271,14 @@ div.cap36 { position: absolute; top: 29px; left: 191px; width: 15px; font: 8pt A
     
 </div>
 
+<div class="g-age-key">
+    <div class="g-age-key-item">
+      <span class="age-key-box black-age-key-box"></span>Population in New York state
+    </div>
+    <div class="g-age-key-item">
+      <span class="age-key-box white-age-key-box"></span>Representation in New York State Assembly
+    </div>
+  </div>
 
 <div class="text"><p> 
 The "Assembly Members" tab of the the New York State Assembly website has the feel of a 90s yearbook. Each representative gets their own spot. Pictures, titles, email addresses; all is missing is a cheesy inspirational quote. The assemblymen stares back at the reader from the screen, with smiling faces and tailored suits. What one might also notice &mdash; and maybe expect &mdash; is that most of them are white. 74.50 percent white, to be precise.</p>
@@ -256,6 +296,9 @@ The "Assembly Members" tab of the the New York State Assembly website has the fe
 <p></p>
 </div>
 	
+
+
+
 
 </div><!-- container -->	
     </body>
