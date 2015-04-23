@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>The best represented race in the New York State Assembly</title>
+<!--
+	Bullet Graph Design Specification by Stephen Few of Perceptual Edge: 
+	http://www.perceptualedge.com/articles/misc/Bullet_Graph_Design_Spec.pdf
+
+	PURE CSS/HTML BULLET GRAPH 
+	Modify and edit as needed. 
+	It would be nice if you keep these credits. Thanks!
+	HTML solution rendered by: info.arete.mgrams@gmail.com 
+-->        
+<style type="text/css">
+html * { margin: 0; padding: 0; border: 0; }
+body { text-align: center; }
+h1 { font: 30pt Arial, sans-serif; padding: 10px 0 5px 0; width: 600px; margin: 0 auto 10px auto; border-bottom: 1px solid #8f8f8f; text-align: center; }
+h2 { font: 25pt Arial, sans-serif; padding: 10px 0 5px 0; width: 600px; margin: 0 auto 10px auto; text-align: center; }
+h3 { font: 12pt Arial, sans-serif; font-weight: bold; padding: 10px 0 5px 0; width: auto; margin: 0 auto 10px auto; text-align: left; }
+p { font: 10pt Arial, sans-serif; width: 600px; margin: 0; padding-top: 7px; text-align: left; line-height: 140%; }
+
+div.text {float: left; margin-left: -170px; margin-top: 10px}
+div#container { position: relative; margin: auto; padding: 0; text-align: left; top: 80px; width: 500px; }
+
+/*	BULLET GRAPH */
+div.box-wrap { position: relative; width: 500px; height: 21px; top: 0; left: 0; margin: 0; padding: 0; background-color: #eeeeee;}
+
+/*	CHANGE THE WIDTH AND BACKGROUND COLORS AS NEEDED */
+div.box1 { position: absolute; height: 20px; width: 30%; left: 0; background-color: #bbbbbb; z-index: 1; font-size: 0; }
+div.box2 { position: absolute; height: 20px; width: 30%; left: 30%; background-color: #eeeeee; z-index: 1; font-size: 0; }
+div.box3 { position: absolute; height: 20px; width: 30%; left: 60%; background-color: #eeeeee; z-index: 1; font-size: 0; }
+div.box4 { position: absolute; height: 20px; width: 10%; left: 90%; background-color: #eeeeee; z-index: 1; font-size: 0; }
+
+/* ONE SEGMENT ONLY */
+div.actual { position: absolute; height: 8px; left: 0px; top: 6px; background-color: #000000; font-size: 0; z-index: 5; font-size: 0; }
+
+/* TWO SEGMENTS */
+div.actualMAX { position: absolute; height: 8px; left: 0px; top: 6px; background-color: #70a1d8; font-size: 0; z-index: 5; font-size: 0; }
+div.actualPART { position: absolute; height: 8px; left: 0px; top: 6px; background-color: #0a50a1; font-size: 0; z-index: 5; font-size: 0; }
+
+div.mylabel { 
+	position: relative; 
+	height: 20px; 
+	width: 145px; 
+	left: -155px; 
+	top: 2px; 
+	background-color: #fff; 
+	z-index: 7; 
+	font-size: 0;
+	color: #000000; 
+	font: 10pt Arial, sans-serif; 
+	text-align: right; 
+}
+
+div.scale-tb1 {
+	padding: 0; 
+	margin: 0;
+	font-size: 0;
+	width: 500px;
+	border: 0;	
+	position: relative; 
+	top: 10px; 
+	left: 0px; 
+	border-top: 1px solid #8f8f8f; 
+}
+
+div.scale-tb2 {
+	padding: 0; 
+	margin: 0;
+	font-size: 0;
+	width: 500px;
+	border: 0;	
+	position: relative; 
+	top: 0px; 
+	left: 0px; 
+}
+
+/*	SCALE MARKS */
+div.sc21 { position: absolute; height: 7px; width: 1px; left: 0px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc22 { position: absolute; height: 7px; width: 1px; left: 39px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc23 { position: absolute; height: 7px; width: 1px; left: 79px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc24 { position: absolute; height: 7px; width: 1px; left: 119px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc25 { position: absolute; height: 7px; width: 1px; left: 159px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc26 { position: absolute; height: 7px; width: 1px; left: 199px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+
+div.sc31 { position: absolute; height: 7px; width: 1px; left: 0px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc32 { position: absolute; height: 7px; width: 1px; left: 39px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc33 { position: absolute; height: 7px; width: 1px; left: 79px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc34 { position: absolute; height: 7px; width: 1px; left: 119px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc35 { position: absolute; height: 7px; width: 1px; left: 159px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+div.sc36 { position: absolute; height: 7px; width: 1px; left: 199px; top: 0px; background-color: #8f8f8f; z-index: 7; font-size: 0; }
+
+
+/*	SCALE TEXT */
+div.cap21 { position: absolute; top: 40px; left: -2px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap22 { position: absolute; top: 40px; left: 35px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap23 { position: absolute; top: 40px; left: 71px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap24 { position: absolute; top: 40px; left: 112px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap25 { position: absolute; top: 40px; left: 152px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap26 { position: absolute; top: 40px; left: 191px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+
+div.cap31 { position: absolute; top: 29px; left: -2px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap32 { position: absolute; top: 29px; left: 35px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap33 { position: absolute; top: 29px; left: 71px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap34 { position: absolute; top: 29px; left: 112px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap35 { position: absolute; top: 29px; left: 152px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+div.cap36 { position: absolute; top: 29px; left: 191px; width: 15px; font: 8pt Arial, sans-serif; text-align: center; color: #575757; }
+</style>
+
+</head>
+
+<body>
+
+<h1>The best represented race in the New York State Assembly?</h1>
+<h2> It will surprise you</h2>
+
+
+<div id="container">
+
+<div class="box-wrap">
+	<div class="box1" style="width: 17.50%"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="actual" style="width: 16.10%"></div>
+	<div class="mylabel">Black</div>
+
+</div>
+
+	<p style="height: 15px;"></p>
+
+<div class="box-wrap">
+	<div class="box1" style="width: 8.20%"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="actual" style="width: 0.70%"></div>
+	<div class="mylabel">Asian</div>
+
+</div>
+
+	<p style="height: 15px;"></p>
+
+<div class="box-wrap">
+	<div class="box1" style="width: 18.40%"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="actual" style="width: 8.70%"></div>
+	<div class="mylabel">Latino</div>
+
+</div>
+
+	<p style="height: 15px;"></p>
+
+<div class="box-wrap">
+	<div class="box1" style="width: 57.20%"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="actual" style="width: 74.50%"></div>
+	<div class="mylabel">White</div>
+
+  	<div class="cap21">0%</div>
+  	<div class="cap22">20%</div>
+  	<div class="cap23">40%</div>
+  	<div class="cap24">60%</div>
+  	<div class="cap25">80%</div>
+  	<div class="cap26">100%</div>	
+
+    <div class="scale-tb1">
+    	<div class="sc21"></div>
+    	<div class="sc22"></div>
+    	<div class="sc23"></div>
+    	<div class="sc24"></div>
+    	<div class="sc25"></div>
+    	<div class="sc26"></div>
+    </div>	
+    
+</div>
+
+</br>
+
+</br>
+</br>
+</br>
+
+<div class="text"><p> 
+The "Assembly Members" tab of the the New York State Assembly website has the feel of a 90s yearbook. Each representative gets their own spot. Pictures, titles, email addresses; all is missing is a cheesy inspirational quote. The assemblymen stares back at the reader from the screen, with smiling faces and tailored suits. What one might also notice &mdash; and maybe expect &mdash; is that most of them are white. 74.50 percent white, to be precise.</p>
+</br>
+<p>Racial issues have taken center stage in New York in the past few months. The killing of Eric Garner, a black man from Staten Island who died after policeman Daniel Pantaleo put him in chokehold last July, and the decision not to indict Pantaleo, gave way to a series of demonstrations against police brutality and racial profiling. Members of the black community feel misunderstood and misrepresented. [add quote] </p>
+</br>
+<p>Under these circumstances, it might be surprising to hear that the black community is the most fairly represented group in the New York State Assembly, out of the four biggest racial and ethnic groups in the state: white, black, latino and Asian. A look at the distribution of the state population along ethnic and racial lines, however, reveals how the only case in which there is a close correspondence between number of representatives and share of the electorate belonging to a certain group is with the black population. In particular, 16.11 percent of seats in the assembly for 17.50 percent of black population across the state.</p>
+</br>
+<p>Things are much worse for latinos and Asians, who are significantly underrepresented. Asians – who represent 8.20 percent of the whole population – get one single seat (0.67 percent of the total) in the current legislature, while only 13 representatives (8.72 percent) come from a latino background. Those 74.50 percent of seats that are white? They are reserved for a population </p>
+</br>
+</br>
+<h3>Challenges and limits</h3>
+<p></p>
+<h3>Understanding the results</h3>
+<p></p>
+</div>
+	
+
+</div><!-- container -->	
+    </body>
+</html>
